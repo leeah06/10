@@ -1,10 +1,11 @@
 #include <stdio.h>
+#include <string.h>
 
-int main(void) {
-    char code1 = 'A';
-    int code2 = 65;
+void main(void) {
+    char src[] = "The worst things to eat before you sleep";
+    char dst[100];
 
-    printf("code1 = %c, (%d)\n", code1, code1);
-    printf("code2 = %c, (%d)\n", code2, code2);
-    return 0;
+    strcpy(dst, src);
+
+    printf("copied string : %s\n", dst);
 }
